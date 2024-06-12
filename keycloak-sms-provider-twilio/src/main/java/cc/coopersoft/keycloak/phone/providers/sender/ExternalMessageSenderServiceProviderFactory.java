@@ -5,14 +5,13 @@ import cc.coopersoft.keycloak.phone.providers.spi.MessageSenderServiceProviderFa
 import org.keycloak.Config;
 import org.keycloak.models.KeycloakSession;
 import org.keycloak.models.KeycloakSessionFactory;
-
-public class AwsSnsMessageSenderServiceProviderFactory implements MessageSenderServiceProviderFactory {
+public class ExternalMessageSenderServiceProviderFactory implements MessageSenderServiceProviderFactory {
 
     private Config.Scope config;
 
     @Override
-    public MessageSenderService create(KeycloakSession keycloakSession) {
-        return new AwsSnsSmsSenderService(keycloakSession.getContext().getRealm().getDisplayName(), config);
+    public MessageSenderService create(KeycloakSession session) {
+        return new ExternalSmsSenderServiceProvider(config, session.getContext().getRealm().getDisplayName());
     }
 
     @Override
@@ -30,6 +29,7 @@ public class AwsSnsMessageSenderServiceProviderFactory implements MessageSenderS
 
     @Override
     public String getId() {
-        return "aws";
+        return "external";
     }
+
 }

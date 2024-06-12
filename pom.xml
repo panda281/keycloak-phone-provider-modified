@@ -21,25 +21,25 @@
         </license>
     </licenses>
 
-    <scm>
-        <tag>${project.version}</tag>
-        <connection>scm:git@github.com:cooperlyt/keycloak-phone-provider.git</connection>
-        <developerConnection>scm:git@github.com:cooperlyt/keycloak-phone-provider.git</developerConnection>
-        <url>https://github.com/cooperlyt/keycloak-phone-provider</url>
-    </scm>
+<!--    <scm>-->
+<!--        <tag>${project.version}</tag>-->
+<!--        <connection>scm:git@github.com:cooperlyt/keycloak-phone-provider.git</connection>-->
+<!--        <developerConnection>scm:git@github.com:cooperlyt/keycloak-phone-provider.git</developerConnection>-->
+<!--        <url>https://github.com/cooperlyt/keycloak-phone-provider</url>-->
+<!--    </scm>-->
 
-    <developers>
-        <developer>
-            <id>cooperlyt</id>
-            <name>cooper lee</name>
-            <email>lyt3131@163.com</email>
-            <organization>https://cooperlyt.github.io</organization>
-            <timezone>+8</timezone>
-            <roles>
-                <role>Developer</role>
-            </roles>
-        </developer>
-    </developers>
+<!--    <developers>-->
+<!--        <developer>-->
+<!--            <id>cooperlyt</id>-->
+<!--            <name>cooper lee</name>-->
+<!--            <email>lyt3131@163.com</email>-->
+<!--            <organization>https://cooperlyt.github.io</organization>-->
+<!--            <timezone>+8</timezone>-->
+<!--            <roles>-->
+<!--                <role>Developer</role>-->
+<!--            </roles>-->
+<!--        </developer>-->
+<!--    </developers>-->
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
